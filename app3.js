@@ -22,7 +22,7 @@ function getData(dataId) {
 } //function end
 //Async-Await
 
-async function getAlldata() {
+(async function () {
   console.log("getting data1 ....");
   await getData(1);
   console.log("getting data2 ....");
@@ -38,4 +38,4 @@ async function getAlldata() {
   console.log("getting data7 ....");
   await getData(7);
   console.log("All datas fetched");
-} //end of async function
+})(); //end of async function
